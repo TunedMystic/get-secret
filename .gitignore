@@ -27,4 +27,5 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Misc
+misc/
 test_secrets/
