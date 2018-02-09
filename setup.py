@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name='get-secret',
-    version='0.0.1',
+    version='0.0.2',
     py_modules=['get_secret'],
     test_suite='tests',
     description='Simple tool to fetch secrets for your application.',
@@ -17,7 +17,7 @@ setup(
     author_email='jsanweb@gmail.com',
     url='https://github.com/tunedmystic/get-secret',
     download_url=(
-        'https://github.com/tunedmystic/get-secret/archive/0.0.1.tar.gz'
+        'https://github.com/TunedMystic/get-secret/archive/v0.0.2.tar.gz'
     ),
     license='MIT',
     classifiers=[
