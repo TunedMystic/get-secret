@@ -175,11 +175,11 @@ class GetSecretTestCase(unittest.TestCase):
 
     def test_no_env_with_default(self):
         value = get('HOSTNAME',
-                    default='server',
+                    default='example.com',
                     env=False,
                     secret_dir=self.secret_dir)
 
-        self.assertEqual(value, 'server')
+        self.assertEqual(value, 'example.com')
         self.assertIsInstance(value, str)
 
 
