@@ -1,5 +1,5 @@
 import os
-from os.path import dirname, join
+from os.path import dirname, exists, join
 import shutil
 import unittest
 
@@ -10,7 +10,9 @@ class GetSecretTestCase(unittest.TestCase):
     secret_dir = join(dirname(__file__), 'test_secrets')
 
     def make_secret(self, key, value):
-        os.makedirs(self.secret_dir, exist_ok=True)
+        if not exists(self.secret_dir):
+            os.makedirs(self.secret_dir)
+
         with open(join(self.secret_dir, key), 'w') as _file:
             _file.write(value)
 
